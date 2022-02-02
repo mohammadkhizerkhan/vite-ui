@@ -1,24 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-}
-
-:root{
-    --primary:gold;
-    --secondary:indigo;
-    --primary-light:rgb(255,235,122);
-}
-
-html{
-    font-size: 100%;
-}
+@import url(/css/common.css);
 
 body{
     height: 200vh;
 }
-
 
 
 .drawer{
@@ -145,4 +129,10 @@ body{
 .btn:hover{
     cursor: pointer;
     background-color: rgba(0,0,0,0.1);
+}
+
+.documentation{
+    margin-left: 260px;
+    width: 100%;
+    max-width: 70%;
 }
