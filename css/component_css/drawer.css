@@ -5,6 +5,12 @@
     list-style: none;
 }
 
+:root{
+    --primary:gold;
+    --secondary:indigo;
+    --primary-light:rgb(255,235,122);
+}
+
 html{
     font-size: 100%;
 }
@@ -54,6 +60,16 @@ body{
 }
 
 
+.img-responsive{
+    width: 100%;
+    height: auto;
+}
+.logo{
+    width: 100%;
+    height: 113px;
+    cursor: pointer;
+}
+
 .title{
     font-weight: 800;
 }
@@ -74,6 +90,8 @@ body{
 }
 
 .nav-items{
+    font-size: large;
+    font-weight: bold;
     padding: 1rem;
     margin: 5px 0;
     border-radius: 4px;
@@ -82,12 +100,13 @@ body{
 }
 
 .nav-items:hover{
-    background-color: rgb(204, 204, 204);
+    background-color: var(--primary-light);
+    color: var(--secondary);
 }
 
 .nav-items-active{
-    background-color: #ffdcee ;
-    color: hotpink;
+    background-color: var(--primary) ;
+    color: var(--secondary);
 }
 
 .icons{
@@ -98,7 +117,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: hotpink;
+    background-color: var(--primary);
     height: fit-content;
     width: 100%;
     padding: 0.8rem;
