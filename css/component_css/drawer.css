@@ -90,6 +90,7 @@ body{
 }
 
 .nav-items{
+    color: var(--secondary);
     font-size: large;
     font-weight: bold;
     padding: 1rem;
