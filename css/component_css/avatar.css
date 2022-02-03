@@ -6,8 +6,7 @@
 
 .avatar{
     border-radius: 50%;
-    border: 2px solid white;
-    /* background-color: red; */
+    margin: 2px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -30,8 +29,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
-    color: white;
+    background-color: var(--primary);
+    color: var(--secondary);
 }
 
 .avatar-large{
