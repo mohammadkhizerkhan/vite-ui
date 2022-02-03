@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7389171962.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/component.css">
-    <!-- <link rel="stylesheet" href="./css/landing.css"> -->
+    <script src="/js/badge.js" defer></script>
     <title>VITE-UI</title>
 </head>
 
@@ -107,7 +107,7 @@
             <h2>Examples</h2>
             <h3>Avatar with images:</h3>
             <p class="doc-para">Some avatars have their images, So to use this avatar use class name as <span class="txt-high">avatar</span> followed by <span class="txt-high">avatar-size</span> name (e.g: <span class="txt-high">class="avatar avatar-large"</span>). Also in <span class="txt-high">img</span> tag use class name as <span class="txt-high">img-avatar</span></p>
-            <div class="container-avatar component-container">
+            <div class="container-row component-container">
                 <div class="avatar avatar-large">
                     <img src="https://static.displate.com/280x392/displate/2021-09-02/d96e54cf51afb04ae931e03fbd1103d3_6557ad2c6861b4a296782fd87e44b25b.jpg" class="img-avatar" alt="">
                 </div>
@@ -123,7 +123,7 @@
             </div>
             <h3>Avatar with Text:</h3>
             <p class="doc-para">Some avatars only have letter text according to the user name, So to use this avatar use class name as <span class="txt-high">avatar</span> followed by <span class="txt-high">avatar-size</span> name (e.g: <span class="txt-high">class="avatar-large"</span>) followed by <span class="txt-high">avatar-text</span>. For e.g(<span class="txt-high">class="avatar avatar-large avatar-text"</span>).</p>
-            <div class="container-avatar component-container">
+            <div class="container-row component-container">
                 <div class="avatar avatar-large avatar-text">
                     KK
                 </div>
@@ -139,7 +139,7 @@
             </div>
             <h3>Square avatar:</h3>
             <p class="doc-para">To use this square avatar for <span class="txt-high">avatar image variant</span> add class name as <span class="txt-high">img-avatar-square</span> to <span class="txt-high">img</span> tag, And for the <span class="txt-high">avatar text variant</span> add class name as <span class="txt-high">avatar-square</span> to <span class="txt-high">div</span> tag of avatar.</p>
-            <div class="container-avatar component-container">
+            <div class="container-row component-container">
                 <div class="avatar avatar-large">
                     <img src="https://static.displate.com/280x392/displate/2021-09-02/d96e54cf51afb04ae931e03fbd1103d3_6557ad2c6861b4a296782fd87e44b25b.jpg" class="img-avatar img-avatar-square" alt="">
                 </div>
@@ -149,6 +149,49 @@
             </div>
             <div class="code-wrapper">
                 <script src="https://gist.github.com/mohammadkhizerkhan/3fee61d2256cc2018b13c85754b0cbd7.js"></script>
+            </div>
+        </div>
+        <div id="badges">
+            <h1>Badges</h1>
+            <p class="doc-para">
+            </p>
+            <div class="divider-line"></div>
+            <div class="container-row component-container">
+
+                <div class="badge-container">
+                    <p>Lorem ipsum dolor sit ametsdfsadf.</p>
+                    <div class="badge badge-right badge-large"><span>5</span></div>
+                </div>
+         
+                <div class="badge-container">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <div class="badge badge-small badge-left"><span>5</span></div>
+                </div>
+          
+                <div class="badge-container">
+                    <button class="btn-badge">click</button>
+                    <div class="badge badge-small badge-right"><span>5</span></div>
+                </div>
+            
+                <div class="badge-container">
+                    <button class="btn-badge btn-hide">hide</button>
+                    <div class="badge-h badge-small badge-right"><span>5</span></div>
+                </div>
+           
+                <div class="badge-container">
+                    <i class="fas fa-shopping-cart fa-2x"></i>
+                    <div class="badge badge-large badge-right"><span>+99</span></div>
+                </div>
+                
+                <div class="avatar-img-container">
+                    <img src="https://cdnb.artstation.com/p/assets/images/images/041/704/869/large/manuel-armando-gochez-paiz-itachi-uchiha-1.jpg?1632435433" alt="image" class="avatar avatar-large">
+                    <div class="badge badge-large badge-bottom badge-border badge-offline"></div>
+                </div>
+                <div class="avatar-img-container">
+                    <img src="https://cdnb.artstation.com/p/assets/images/images/041/704/869/large/manuel-armando-gochez-paiz-itachi-uchiha-1.jpg?1632435433" alt="image" class="avatar avatar-large">
+                    <div class="badge badge-large badge-bottom badge-border badge-online"></div>
+                </div>
+
             </div>
         </div>
     </div>
