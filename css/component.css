@@ -23,8 +23,8 @@
 }
 
 .code-wrapper{
-    /* margin: 1rem 0; */
     width: 100%;
+    word-wrap: break-word;
 }
 
 .iframe{
