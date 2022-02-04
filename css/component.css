@@ -2,6 +2,7 @@
 @import url(/css/component_css/drawer.css);
 @import url(/css/component_css/alert.css);
 @import url(/css/component_css/avatar.css);
+@import url(/css/component_css/badge.css);
 
 
 
@@ -10,6 +11,12 @@
     padding: 1rem;
     border-radius: 4px;
     margin: 1rem 0;
+}
+
+.container-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .divider-line{
