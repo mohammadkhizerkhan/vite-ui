@@ -80,6 +80,6 @@
 .btn-badge{
     padding: 0.5rem;
     font-weight: bolder;
-    background-color: tomato;
+    background-color: var(--primary);
     border: none;
 }
