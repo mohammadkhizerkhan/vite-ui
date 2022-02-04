@@ -1,0 +1,110 @@
+:root{
+    --shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.btn{
+    margin: 5px;
+    font-size: 1rem;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+.standard-btn{
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.standard-btn:hover{
+    background-color: var(--primary-light);
+    color: var(--secondary-light);
+}
+
+/* component-btns */
+
+.primary-btn{
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+.primary-btn:hover{
+    background-color: var(--primary-light);
+    color: var(--secondary-light);
+}
+
+.secondary-btn{
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+.secondary-btn:hover{
+    background-color: var(--secondary-light);
+    color: var(--primary-light);
+}
+
+
+/* btn-shadows */
+
+.btn-shadow{
+    box-shadow: var(--shadow);
+}
+.btn-shadow-hover:hover{
+    box-shadow: var(--shadow);
+}
+
+
+/* outlined-btns */
+
+.primary-btn-outlined{
+    border: 2px solid var(--primary);
+    background-color: transparent;
+    color: var(--primary);
+}
+
+.primary-btn-outlined:hover{
+    border: 2px solid var(--primary);
+    background-color: var(--primary);
+    color:var(--secondary);
+}
+
+.secondary-btn-outlined{
+    border: 2px solid var(--secondary);
+    background-color: transparent;
+    color: var(--secondary);
+}
+
+.secondary-btn-outlined:hover{
+    border: 2px solid var(--secondary);
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+.btn-outlined{
+    background:transparent;
+    border:1px solid black;
+}
+
+
+.btn-icon{
+    padding: 20px;
+    border-radius: 50%;
+}
+
+
+/* button-sizes */
+
+.btn-s{
+    font-size: 1rem;
+    padding: 3px 10px;
+}
+
+.btn-m{
+    font-size: 1.25rem;
+    padding: 7px 17px;
+}
+.btn-l{
+    padding: 10px 24px;
+    font-size: 1.5rem;
+}
