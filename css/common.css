@@ -12,7 +12,8 @@
 :root{
     --primary:gold;
     --secondary:indigo;
-    --primary-light:rgb(255,235,122);
+    --primary-light:rgb(255, 232, 103);
+    --secondary-light:rgb(104, 0, 179);
 }
 
 html{

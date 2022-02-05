@@ -3,6 +3,7 @@
 @import url(/css/component_css/alert.css);
 @import url(/css/component_css/avatar.css);
 @import url(/css/component_css/badge.css);
+@import url(/css/component_css/button.css);
 
 
 
@@ -17,6 +18,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .divider-line{
