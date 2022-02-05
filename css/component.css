@@ -40,4 +40,11 @@
     word-wrap: break-word;
 }
 
-
+.hljs {
+    display: block;
+    background: white;
+    padding: 0.5em;
+    color: #333333;
+    overflow-x: auto;
+    height: 20rem;
+}
