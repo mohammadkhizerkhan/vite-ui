@@ -1,333 +1,533 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/7389171962.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="/css/component.css" />
-    <script src="/js/badge.js" defer></script>
-    <title>VITE-UI</title>
-  </head>
 
-  <body>
-    <div class="drawer">
-      <header class="drawer-header">
-        <a href="/index.html">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/7389171962.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/component.css" />
+  <script src="/js/badge.js" defer></script>
+  <title>VITE-UI</title>
+</head>
+
+<body>
+  <div class="drawer">
+    <header class="drawer-header">
+      <a href="/index.html">
+        <img src="/images/vite-light2.png" alt="" class="logo img-responsive" />
+      </a>
+    </header>
+    <hr />
+    <nav class="navbar">
+      <a class="nav-items" href="#"> Installation </a>
+      <a class="nav-items" href="#alert"> Alert </a>
+      <a class="nav-items" href="#avatar"> Avatar </a>
+      <a class="nav-items" href="#badges"> Badges </a>
+      <a class="nav-items" href="#button"> Button </a>
+      <a class="nav-items" href="#card"> Cards </a>
+      <a class="nav-items" href="#"> Chips </a>
+      <a class="nav-items" href="#"> Dialog </a>
+      <a class="nav-items" href="#"> Drawer </a>
+      <a class="nav-items" href="#"> Header </a>
+      <a class="nav-items" href="#"> Image </a>
+      <a class="nav-items" href="#"> Input </a>
+      <a class="nav-items" href="#"> List </a>
+      <a class="nav-items" href="#"> Snackbar </a>
+      <a class="nav-items" href="#"> Tabs </a>
+      <a class="nav-items" href="#"> Text-Utilities </a>
+    </nav>
+  </div>
+  <div class="documentation">
+    <div id="alert">
+      <h1>Alert</h1>
+      <p class="doc-para">
+        Alerts are used to display important message to the user's whether its
+        Warning, Success, Error or just a simple notification.
+      </p>
+      <div class="divider-line"></div>
+      <h2>Example</h2>
+      <p class="doc-para">
+        To use this alerts use class name as <b>alert</b> followed by alert
+        <b>variant</b> name (e.g:<span class="txt-high">class="alert alert-sucess"</span>)
+      </p>
+      <div class="component-container">
+        <div class="alert">this is standard alert</div>
+        <div class="alert alert-success">
+          <i class="fas fa-check-circle icon"></i>
+          this is success alert
+        </div>
+        <div class="alert alert-failure">
+          <i class="fas fa-exclamation-circle icon"></i>
+          this is failure alert
+        </div>
+        <div class="alert alert-warning">
+          <i class="fas fa-exclamation-triangle icon"></i>
+          this is warning alert
+        </div>
+      </div>
+      <div class="code-wrapper">
+        <script
+          src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fmohammadkhizerkhan%2Fvite-ui%2Fblob%2FAlert%2Fcomponents%2Fdocs.html%23L83-92&style=github-gist&showBorder=on&showCopy=on&fetchFromJsDelivr=on">
+        </script>
+      </div>
+    </div>
+    <div id="avatar">
+      <h1>Avatar</h1>
+      <p class="doc-para">
+        Avatar is used display profile picture which show's the identity of
+        the user's, They usually displayed in round shape.
+      </p>
+      <div class="divider-line"></div>
+      <h2>Examples</h2>
+      <h3>Avatar with images:</h3>
+      <p class="doc-para">
+        Some avatars have their images, So to use this avatar use class name
+        as <span class="txt-high">avatar</span> followed by
+        <span class="txt-high">avatar-size</span> name (e.g:
+        <span class="txt-high">class="avatar avatar-large"</span>). Also in
+        <span class="txt-high">img</span> tag use class name as
+        <span class="txt-high">img-avatar</span>
+      </p>
+      <div class="container-row component-container">
+        <div class="avatar avatar-large">
           <img
-            src="/images/vite-light2.png"
-            alt=""
-            class="logo img-responsive"
-          />
-        </a>
-      </header>
-      <hr />
-      <nav class="navbar">
-        <a class="nav-items" href="#"> Installation </a>
-        <a class="nav-items" href="#alert"> Alert </a>
-        <a class="nav-items" href="#avatar"> Avatar </a>
-        <a class="nav-items" href="#badges"> Badges </a>
-        <a class="nav-items" href="#button"> Button </a>
-        <a class="nav-items" href="#"> Cards </a>
-        <a class="nav-items" href="#"> Chips </a>
-        <a class="nav-items" href="#"> Dialog </a>
-        <a class="nav-items" href="#"> Drawer </a>
-        <a class="nav-items" href="#"> Header </a>
-        <a class="nav-items" href="#"> Image </a>
-        <a class="nav-items" href="#"> Input </a>
-        <a class="nav-items" href="#"> List </a>
-        <a class="nav-items" href="#"> Snackbar </a>
-        <a class="nav-items" href="#"> Tabs </a>
-        <a class="nav-items" href="#"> Text-Utilities </a>
-      </nav>
-    </div>
-    <div class="documentation">
-      <div id="alert">
-        <h1>Alert</h1>
-        <p class="doc-para">
-          Alerts are used to display important message to the user's whether its
-          Warning, Success, Error or just a simple notification.
-        </p>
-        <div class="divider-line"></div>
-        <h2>Example</h2>
-        <p class="doc-para">
-          To use this alerts use class name as <b>alert</b> followed by alert
-          <b>variant</b> name (e.g:<span class="txt-high"
-            >class="alert alert-sucess"</span
-          >)
-        </p>
-        <div class="component-container">
-          <div class="alert">this is standard alert</div>
-          <div class="alert alert-success">
-            <i class="fas fa-check-circle icon"></i>
-            this is success alert
-          </div>
-          <div class="alert alert-failure">
-            <i class="fas fa-exclamation-circle icon"></i>
-            this is failure alert
-          </div>
-          <div class="alert alert-warning">
-            <i class="fas fa-exclamation-triangle icon"></i>
-            this is warning alert
-          </div>
+            src="https://static.displate.com/280x392/displate/2021-09-02/d96e54cf51afb04ae931e03fbd1103d3_6557ad2c6861b4a296782fd87e44b25b.jpg"
+            class="img-avatar" alt="" />
         </div>
-        <div class="code-wrapper">
-          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fmohammadkhizerkhan%2Fvite-ui%2Fblob%2FAlert%2Fcomponents%2Fdocs.html%23L83-92&style=github-gist&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
+        <div class="avatar avatar-medium">
+          <img
+            src="https://static.displate.com/280x392/displate/2021-09-02/d96e54cf51afb04ae931e03fbd1103d3_6557ad2c6861b4a296782fd87e44b25b.jpg"
+            class="img-avatar" alt="" />
+        </div>
+        <div class="avatar avatar-small">
+          <img
+            src="https://static.displate.com/280x392/displate/2021-09-02/d96e54cf51afb04ae931e03fbd1103d3_6557ad2c6861b4a296782fd87e44b25b.jpg"
+            class="img-avatar" alt="" />
         </div>
       </div>
-      <div id="avatar">
-        <h1>Avatar</h1>
-        <p class="doc-para">
-          Avatar is used display profile picture which show's the identity of
-          the user's, They usually displayed in round shape.
-        </p>
-        <div class="divider-line"></div>
-        <h2>Examples</h2>
-        <h3>Avatar with images:</h3>
-        <p class="doc-para">
-          Some avatars have their images, So to use this avatar use class name
-          as <span class="txt-high">avatar</span> followed by
-          <span class="txt-high">avatar-size</span> name (e.g:
-          <span class="txt-high">class="avatar avatar-large"</span>). Also in
-          <span class="txt-high">img</span> tag use class name as
-          <span class="txt-high">img-avatar</span>
-        </p>
-        <div class="container-row component-container">
-          <div class="avatar avatar-large">
-            <img
-              src="https://static.displate.com/280x392/displate/2021-09-02/d96e54cf51afb04ae931e03fbd1103d3_6557ad2c6861b4a296782fd87e44b25b.jpg"
-              class="img-avatar"
-              alt=""
-            />
-          </div>
-          <div class="avatar avatar-medium">
-            <img
-              src="https://static.displate.com/280x392/displate/2021-09-02/d96e54cf51afb04ae931e03fbd1103d3_6557ad2c6861b4a296782fd87e44b25b.jpg"
-              class="img-avatar"
-              alt=""
-            />
-          </div>
-          <div class="avatar avatar-small">
-            <img
-              src="https://static.displate.com/280x392/displate/2021-09-02/d96e54cf51afb04ae931e03fbd1103d3_6557ad2c6861b4a296782fd87e44b25b.jpg"
-              class="img-avatar"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="code-wrapper">
-          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fmohammadkhizerkhan%2Fvite-ui%2Fblob%2Favatar%2Fcomponents%2Fdocs.html%23L111-119&style=github-gist&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
-        </div>
-        <h3>Avatar with Text:</h3>
-        <p class="doc-para">
-          Some avatars only have letter text according to the user name, So to
-          use this avatar use class name as
-          <span class="txt-high">avatar</span> followed by
-          <span class="txt-high">avatar-size</span> name (e.g:
-          <span class="txt-high">class="avatar-large"</span>) followed by
-          <span class="txt-high">avatar-text</span>. For e.g(<span
-            class="txt-high"
-            >class="avatar avatar-large avatar-text"</span
-          >).
-        </p>
-        <div class="container-row component-container">
-          <div class="avatar avatar-large avatar-text">KK</div>
-          <div class="avatar avatar-medium avatar-text">KK</div>
-          <div class="avatar avatar-small avatar-text">KK</div>
-        </div>
-        <div class="code-wrapper">
-          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fmohammadkhizerkhan%2Fvite-ui%2Fblob%2Fbadges%2Fcomponents%2Fdocs.html%23L127-135&style=github-gist&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
-        </div>
-        <h3>Square avatar:</h3>
-        <p class="doc-para">
-          To use this square avatar for
-          <span class="txt-high">avatar image variant</span> add class name as
-          <span class="txt-high">img-avatar-square</span> to
-          <span class="txt-high">img</span> tag, And for the
-          <span class="txt-high">avatar text variant</span> add class name as
-          <span class="txt-high">avatar-square</span> to
-          <span class="txt-high">div</span> tag of avatar.
-        </p>
-        <div class="container-row component-container">
-          <div class="avatar avatar-large">
-            <img
-              src="https://static.displate.com/280x392/displate/2021-09-02/d96e54cf51afb04ae931e03fbd1103d3_6557ad2c6861b4a296782fd87e44b25b.jpg"
-              class="img-avatar img-avatar-square"
-              alt=""
-            />
-          </div>
-          <div class="avatar avatar-large avatar-text avatar-square">KK</div>
-        </div>
-        <div class="code-wrapper">
-          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fmohammadkhizerkhan%2Fvite-ui%2Fblob%2Fbadges%2Fcomponents%2Fdocs.html%23L143-148&style=github-gist&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
-        </div>
+      <div class="code-wrapper">
+        <script
+          src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fmohammadkhizerkhan%2Fvite-ui%2Fblob%2Favatar%2Fcomponents%2Fdocs.html%23L111-119&style=github-gist&showBorder=on&showCopy=on&fetchFromJsDelivr=on">
+        </script>
       </div>
-      <div id="badges">
-        <h1>Badges</h1>
-        <p class="doc-para">
-          Badges are the small cirles which displays number or online/offline
-          status on avatar, icons, buttons. they can places at top/bottom -
-          right or top/bottom - left.
-        </p>
-        <div class="divider-line"></div>
-        <h2>Example</h2>
-        <h3>Badges on buttons:</h3>
-        <p class="doc-para">
-          To use badges on buttons place button and div for badge inside a div
-          of class <span class="txt-high">badge-container</span> and for the
-          badge div use class name <span class="txt-high">badge</span> followed
-          by badge-size for e.g(<span class="txt-high">badge-small</span>)
-          followed by badge-position for e.g(<span class="txt-high"
-            >badge-right</span
-          >).
-        </p>
-        <p class="doc-para">
-          To implement hide button functionality use class name
-          <span class="txt-high">badge-h</span> instead of
-          <span class="txt-high">badge</span> in button tag, And then use
-          javascript code paste it in your javascript file which is linked to
-          your html file.
-        </p>
-        <div class="container-row component-container">
-          <div class="badge-container">
-            <button class="btn-badge">click</button>
-            <div class="badge badge-small badge-right"><span>5</span></div>
-          </div>
-
-          <div class="badge-container">
-            <button class="btn-badge btn-hide">hide</button>
-            <div class="badge-h badge-small badge-right"><span>5</span></div>
-          </div>
-        </div>
-        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fmohammadkhizerkhan%2Fvite-ui%2Fblob%2Fbadges%2Fcomponents%2Fdocs.html%23L171-179&style=github-gist&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
-        <h3>JS code:</h3>
-        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fmohammadkhizerkhan%2Fvite-ui%2Fblob%2Fbadges%2Fjs%2Fbadge.js%23L1-6&style=github-gist&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
-        <h3>Badges on icons:</h3>
-        <p class="doc-para">
-          To use badges on icons place icon and div for badge inside a div of
-          class <span class="txt-high">badge-container</span> and for the badge
-          div use class name <span class="txt-high">badge</span> followed by
-          badge-size for e.g(<span class="txt-high">badge-large</span>) followed
-          by badge-position for e.g(<span class="txt-high">badge-right</span>).
-        </p>
-        <div class="container-row component-container">
-          <div class="badge-container">
-            <i class="fas fa-shopping-cart fa-2x"></i>
-            <div class="badge badge-large badge-right"><span>+99</span></div>
-          </div>
-          <div class="badge-container">
-            <i class="fas fa-exclamation-circle fa-2x"></i>
-            <div class="badge badge-large badge-right"><span>+99</span></div>
-          </div>
-          <div class="badge-container">
-            <i class="fas fa-shipping-fast fa-2x"></i>
-            <div class="badge badge-large badge-right"><span>+99</span></div>
-          </div>
-        </div>
-        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fmohammadkhizerkhan%2Fvite-ui%2Fblob%2Fbutton%2Fcomponents%2Fdocs.html%23L217-228&style=github-gist&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
-        <h3>Badges on avatar:</h3>
-        <p class="doc-para">
-          Badges on avatar usually use to show online/offline, to use this
-          variant of badge on avatar place avatar image tag and div for badge
-          inside a div of class
-          <span class="txt-high">avatar-img-badge-container</span> and for the
-          badge div use class name <span class="txt-high">badge</span> followed
-          by badge-size for e.g(<span class="txt-high">badge-large</span>),
-          followed by badge-position for e.g(<span class="txt-high"
-            >badge-bottom</span
-          >, followed by <span class="txt-high">badge-border</span> ,followed by
-          badge-online/offline for e.g(<span class="txt-high"
-            >badge-offline</span
-          >).
-        </p>
-        <p class="doc-para">
-          Also use class name <span class="txt-high">avatar</span> and
-          <span class="txt-high">avatar-large</span> inside img tag.
-        </p>
-        <div class="container-row component-container">
-          <div class="avatar-img-badge-container">
-            <img
-              src="https://cdnb.artstation.com/p/assets/images/images/041/704/869/large/manuel-armando-gochez-paiz-itachi-uchiha-1.jpg?1632435433"
-              alt="image"
-              class="avatar avatar-large"
-            />
-            <div
-              class="badge badge-large badge-bottom badge-border badge-offline"
-            ></div>
-          </div>
-          <div class="avatar-img-badge-container">
-            <img
-              src="https://cdnb.artstation.com/p/assets/images/images/041/704/869/large/manuel-armando-gochez-paiz-itachi-uchiha-1.jpg?1632435433"
-              alt="image"
-              class="avatar avatar-large"
-            />
-            <div
-              class="badge badge-large badge-bottom badge-border badge-online"
-            ></div>
-          </div>
-        </div>
+      <h3>Avatar with Text:</h3>
+      <p class="doc-para">
+        Some avatars only have letter text according to the user name, So to
+        use this avatar use class name as
+        <span class="txt-high">avatar</span> followed by
+        <span class="txt-high">avatar-size</span> name (e.g:
+        <span class="txt-high">class="avatar-large"</span>) followed by
+        <span class="txt-high">avatar-text</span>. For e.g(<span class="txt-high">class="avatar avatar-large
+          avatar-text"</span>).
+      </p>
+      <div class="container-row component-container">
+        <div class="avatar avatar-large avatar-text">KK</div>
+        <div class="avatar avatar-medium avatar-text">KK</div>
+        <div class="avatar avatar-small avatar-text">KK</div>
       </div>
-      <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fmohammadkhizerkhan%2Fvite-ui%2Fblob%2Fbadges%2Fcomponents%2Fdocs.html%23L186-193&style=github-gist&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
-      <div id="button">
-          <h1>Button</h1>
-          <p class="doc-para">Buttons allows uses to call the action, here we have couple of designs for buttons.</p>
-          <div class="divider-line"></div>
-          <h2>Example</h2>
-          <h3>Button Sizes:</h3>
-          <p class="doc-para">Before using add class name <span class="txt-high">btn</span> followed by 3 Sizes(<span class="txt-high">small</span>, <span class="txt-high">medium</span>, <span class="txt-high">large</span>) as <span class="txt-high">btn-s</span>, <span class="txt-high">btn-m</span>, <span class="txt-high">btn-l</span> respectively.</p>
-        <div class="container-row component-container">
-          <button class="btn standard-btn btn-s">CLICK</button>
-          <button class="btn standard-btn btn-m">CLICK</button>
-          <button class="btn standard-btn btn-l">CLICK</button>
+      <div class="code-wrapper">
+        <script
+          src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fmohammadkhizerkhan%2Fvite-ui%2Fblob%2Fbadges%2Fcomponents%2Fdocs.html%23L127-135&style=github-gist&showBorder=on&showCopy=on&fetchFromJsDelivr=on">
+        </script>
+      </div>
+      <h3>Square avatar:</h3>
+      <p class="doc-para">
+        To use this square avatar for
+        <span class="txt-high">avatar image variant</span> add class name as
+        <span class="txt-high">img-avatar-square</span> to
+        <span class="txt-high">img</span> tag, And for the
+        <span class="txt-high">avatar text variant</span> add class name as
+        <span class="txt-high">avatar-square</span> to
+        <span class="txt-high">div</span> tag of avatar.
+      </p>
+      <div class="container-row component-container">
+        <div class="avatar avatar-large">
+          <img
+            src="https://static.displate.com/280x392/displate/2021-09-02/d96e54cf51afb04ae931e03fbd1103d3_6557ad2c6861b4a296782fd87e44b25b.jpg"
+            class="img-avatar img-avatar-square" alt="" />
         </div>
-        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fmohammadkhizerkhan%2Fvite-ui%2Fblob%2Fbutton%2Fcomponents%2Fdocs.html%23L282-284&style=github-gist&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
-        <h3>Solid buttons:</h3>
-        <p class="doc-para"><strong>--></strong>To use solid button use class name as <span class="txt-high">btn</span> followed by <span class="txt-high">button sizes</span> followed by primary/secondary buttons for e.g(<span class="txt-high">primary-btn</span>).</p>
-        <p class="doc-para"><strong>--></strong>To use shadow for the button use class name as <span class="txt-high">btn-shadow</span>, To hover a shadow for a button use class name <span class="txt-high">btn-shadow-hover</span>.</p>
-        <p class="doc-para"><strong>--></strong>To use floation action button use class name <span class="txt-high">btn-icon</span>.</p>
-        <p class="doc-para"><strong>--></strong>To use link button use anchor tag with class name <span class="txt-high">btn-link</span>.</p>
-
-        <div class="container-row component-container">
-          <button class="btn primary-btn btn-l">primary-btn</button>
-          <button class="btn secondary-btn btn-l">secondary-btn</button>
-          <button class="btn primary-btn">
-            <i class="fas fa-user-plus"></i> Invite
-          </button>
-          <button class="btn primary-btn btn-l btn-shadow">shadow</button>
-          <button class="btn secondary-btn btn-l btn-shadow-hover">
-            shadow-hover
-          </button>
-          <button class="btn primary-btn btn-icon">
-            <i class="far fa-trash-alt"></i>
-          </button>
-          <a href="" class="btn-link">link-button</a>
-        </div>
-        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fmohammadkhizerkhan%2Fvite-ui%2Fblob%2Fbutton%2Fcomponents%2Fdocs.html%23L288-297&style=github-gist&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
-        <h3>Outline buttons:</h3>
-        <p class="doc-para">To use outline button use class names same as solid buttons but replace <span class="txt-high">primary-btn/secondary-btn</span> class into <span class="txt-high">primary-btn-outlined/secondary-btn-outlined</span>.</p>
-        <div class="container-row component-container">
-          <button class="btn primary-btn-outlined btn-m">primary-btn</button>
-          <button class="btn secondary-btn-outlined btn-m">
-            secondary-btn
-          </button>
-          <button class="btn primary-btn-outlined btn-m">
-            <i class="fas fa-user-plus"></i> Invite
-          </button>
-          <button class="btn secondary-btn-outlined btn-m btn-shadow">
-            outline-shadow
-          </button>
-          <button class="btn primary-btn-outlined btn-m btn-shadow-hover">
-            outline-shadow-hover
-          </button>
-          <button class="btn secondary-btn-outlined btn-icon">
-            <i class="far fa-trash-alt"></i>
-          </button>
-        </div>
-        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fmohammadkhizerkhan%2Fvite-ui%2Fblob%2Fbutton%2Fcomponents%2Fdocs.html%23L301-313&style=github-gist&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
+        <div class="avatar avatar-large avatar-text avatar-square">KK</div>
+      </div>
+      <div class="code-wrapper">
+        <script
+          src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fmohammadkhizerkhan%2Fvite-ui%2Fblob%2Fbadges%2Fcomponents%2Fdocs.html%23L143-148&style=github-gist&showBorder=on&showCopy=on&fetchFromJsDelivr=on">
+        </script>
       </div>
     </div>
-  </body>
+    <div id="badges">
+      <h1>Badges</h1>
+      <p class="doc-para">
+        Badges are the small cirles which displays number or online/offline
+        status on avatar, icons, buttons. they can places at top/bottom -
+        right or top/bottom - left.
+      </p>
+      <div class="divider-line"></div>
+      <h2>Example</h2>
+      <h3>Badges on buttons:</h3>
+      <p class="doc-para">
+        To use badges on buttons place button and div for badge inside a div
+        of class <span class="txt-high">badge-container</span> and for the
+        badge div use class name <span class="txt-high">badge</span> followed
+        by badge-size for e.g(<span class="txt-high">badge-small</span>)
+        followed by badge-position for e.g(<span class="txt-high">badge-right</span>).
+      </p>
+      <p class="doc-para">
+        To implement hide button functionality use class name
+        <span class="txt-high">badge-h</span> instead of
+        <span class="txt-high">badge</span> in button tag, And then use
+        javascript code paste it in your javascript file which is linked to
+        your html file.
+      </p>
+      <div class="container-row component-container">
+        <div class="badge-container">
+          <button class="btn-badge">click</button>
+          <div class="badge badge-small badge-right"><span>5</span></div>
+        </div>
+
+        <div class="badge-container">
+          <button class="btn-badge btn-hide">hide</button>
+          <div class="badge-h badge-small badge-right"><span>5</span></div>
+        </div>
+      </div>
+      <script
+        src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fmohammadkhizerkhan%2Fvite-ui%2Fblob%2Fbadges%2Fcomponents%2Fdocs.html%23L171-179&style=github-gist&showBorder=on&showCopy=on&fetchFromJsDelivr=on">
+      </script>
+      <h3>JS code:</h3>
+      <script
+        src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fmohammadkhizerkhan%2Fvite-ui%2Fblob%2Fbadges%2Fjs%2Fbadge.js%23L1-6&style=github-gist&showBorder=on&showCopy=on&fetchFromJsDelivr=on">
+      </script>
+      <h3>Badges on icons:</h3>
+      <p class="doc-para">
+        To use badges on icons place icon and div for badge inside a div of
+        class <span class="txt-high">badge-container</span> and for the badge
+        div use class name <span class="txt-high">badge</span> followed by
+        badge-size for e.g(<span class="txt-high">badge-large</span>) followed
+        by badge-position for e.g(<span class="txt-high">badge-right</span>).
+      </p>
+      <div class="container-row component-container">
+        <div class="badge-container">
+          <i class="fas fa-shopping-cart fa-2x"></i>
+          <div class="badge badge-large badge-right"><span>+99</span></div>
+        </div>
+        <div class="badge-container">
+          <i class="fas fa-exclamation-circle fa-2x"></i>
+          <div class="badge badge-large badge-right"><span>+99</span></div>
+        </div>
+        <div class="badge-container">
+          <i class="fas fa-shipping-fast fa-2x"></i>
+          <div class="badge badge-large badge-right"><span>+99</span></div>
+        </div>
+      </div>
+      <script
+        src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fmohammadkhizerkhan%2Fvite-ui%2Fblob%2Fbutton%2Fcomponents%2Fdocs.html%23L217-228&style=github-gist&showBorder=on&showCopy=on&fetchFromJsDelivr=on">
+      </script>
+      <h3>Badges on avatar:</h3>
+      <p class="doc-para">
+        Badges on avatar usually use to show online/offline, to use this
+        variant of badge on avatar place avatar image tag and div for badge
+        inside a div of class
+        <span class="txt-high">avatar-img-badge-container</span> and for the
+        badge div use class name <span class="txt-high">badge</span> followed
+        by badge-size for e.g(<span class="txt-high">badge-large</span>),
+        followed by badge-position for e.g(<span class="txt-high">badge-bottom</span>, followed by <span
+          class="txt-high">badge-border</span> ,followed by
+        badge-online/offline for e.g(<span class="txt-high">badge-offline</span>).
+      </p>
+      <p class="doc-para">
+        Also use class name <span class="txt-high">avatar</span> and
+        <span class="txt-high">avatar-large</span> inside img tag.
+      </p>
+      <div class="container-row component-container">
+        <div class="avatar-img-badge-container">
+          <img
+            src="https://cdnb.artstation.com/p/assets/images/images/041/704/869/large/manuel-armando-gochez-paiz-itachi-uchiha-1.jpg?1632435433"
+            alt="image" class="avatar avatar-large" />
+          <div class="badge badge-large badge-bottom badge-border badge-offline"></div>
+        </div>
+        <div class="avatar-img-badge-container">
+          <img
+            src="https://cdnb.artstation.com/p/assets/images/images/041/704/869/large/manuel-armando-gochez-paiz-itachi-uchiha-1.jpg?1632435433"
+            alt="image" class="avatar avatar-large" />
+          <div class="badge badge-large badge-bottom badge-border badge-online"></div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fmohammadkhizerkhan%2Fvite-ui%2Fblob%2Fbadges%2Fcomponents%2Fdocs.html%23L186-193&style=github-gist&showBorder=on&showCopy=on&fetchFromJsDelivr=on">
+    </script>
+    <div id="button">
+      <h1>Button</h1>
+      <p class="doc-para">
+        Buttons allows uses to call the action, here we have couple of designs
+        for buttons.
+      </p>
+      <div class="divider-line"></div>
+      <h2>Example</h2>
+      <h3>Button Sizes:</h3>
+      <p class="doc-para">
+        Before using add class name <span class="txt-high">btn</span> followed
+        by 3 Sizes(<span class="txt-high">small</span>,
+        <span class="txt-high">medium</span>,
+        <span class="txt-high">large</span>) as
+        <span class="txt-high">btn-s</span>,
+        <span class="txt-high">btn-m</span>,
+        <span class="txt-high">btn-l</span> respectively.
+      </p>
+      <div class="container-row component-container">
+        <button class="btn standard-btn btn-s">CLICK</button>
+        <button class="btn standard-btn btn-m">CLICK</button>
+        <button class="btn standard-btn btn-l">CLICK</button>
+      </div>
+      <script
+        src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fmohammadkhizerkhan%2Fvite-ui%2Fblob%2Fbutton%2Fcomponents%2Fdocs.html%23L282-284&style=github-gist&showBorder=on&showCopy=on&fetchFromJsDelivr=on">
+      </script>
+      <h3>Solid buttons:</h3>
+      <p class="doc-para">
+        <strong>--></strong>To use solid button use class name as
+        <span class="txt-high">btn</span> followed by
+        <span class="txt-high">button sizes</span> followed by
+        primary/secondary buttons for e.g(<span class="txt-high">primary-btn</span>).
+      </p>
+      <p class="doc-para">
+        <strong>--></strong>To use shadow for the button use class name as
+        <span class="txt-high">btn-shadow</span>, To hover a shadow for a
+        button use class name <span class="txt-high">btn-shadow-hover</span>.
+      </p>
+      <p class="doc-para">
+        <strong>--></strong>To use floation action button use class name
+        <span class="txt-high">btn-icon</span>.
+      </p>
+      <p class="doc-para">
+        <strong>--></strong>To use link button use anchor tag with class name
+        <span class="txt-high">btn-link</span>.
+      </p>
+
+      <div class="container-row component-container">
+        <button class="btn primary-btn btn-l">primary-btn</button>
+        <button class="btn secondary-btn btn-l">secondary-btn</button>
+        <button class="btn primary-btn">
+          <i class="fas fa-user-plus"></i> Invite
+        </button>
+        <button class="btn primary-btn btn-l btn-shadow">shadow</button>
+        <button class="btn secondary-btn btn-l btn-shadow-hover">
+          shadow-hover
+        </button>
+        <button class="btn primary-btn btn-icon">
+          <i class="far fa-trash-alt"></i>
+        </button>
+        <a href="" class="btn-link">link-button</a>
+      </div>
+      <script
+        src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fmohammadkhizerkhan%2Fvite-ui%2Fblob%2Fbutton%2Fcomponents%2Fdocs.html%23L288-297&style=github-gist&showBorder=on&showCopy=on&fetchFromJsDelivr=on">
+      </script>
+      <h3>Outline buttons:</h3>
+      <p class="doc-para">
+        To use outline button use class names same as solid buttons but
+        replace <span class="txt-high">primary-btn/secondary-btn</span> class
+        into
+        <span class="txt-high">primary-btn-outlined/secondary-btn-outlined</span>.
+      </p>
+      <div class="container-row component-container">
+        <button class="btn primary-btn-outlined btn-m">primary-btn</button>
+        <button class="btn secondary-btn-outlined btn-m">
+          secondary-btn
+        </button>
+        <button class="btn primary-btn-outlined btn-m">
+          <i class="fas fa-user-plus"></i> Invite
+        </button>
+        <button class="btn secondary-btn-outlined btn-m btn-shadow">
+          outline-shadow
+        </button>
+        <button class="btn primary-btn-outlined btn-m btn-shadow-hover">
+          outline-shadow-hover
+        </button>
+        <button class="btn secondary-btn-outlined btn-icon">
+          <i class="far fa-trash-alt"></i>
+        </button>
+      </div>
+      <script
+        src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fmohammadkhizerkhan%2Fvite-ui%2Fblob%2Fbutton%2Fcomponents%2Fdocs.html%23L301-313&style=github-gist&showBorder=on&showCopy=on&fetchFromJsDelivr=on">
+      </script>
+    </div>
+    <div id="card">
+      <h1>Cards</h1>
+      <p class="doc-para">Cards are used to display simple details and action of single item or topic.</p>
+      <div class="divider-line"></div>
+      <h2>Example</h2>
+      <h3>Standard Text card:</h3>
+      <p class="doc-para">For card with a shadow use class name <span class="txt-high">card-shadow</span>.</p>
+      <div class="container-row component-container">
+        <div class="card">
+          <button class="card-badge">
+            <i class="far fa-bookmark fa-2x"></i>
+          </button>
+          <div class="card-body">
+            <header class="card-header">
+              <h2>Our Changing Planet</h2>
+              <h5>by Khan</h5>
+            </header>
+            <div class="card-info">
+              <p>
+                Visit ten places on our planet that are undergoing the biggest
+                changes today.
+              </p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="card-btn-container">
+              <button class="btn primary-btn-outlined btn-s">READ</button>
+              <button class="btn secondary-btn-outlined btn-s">
+                BOOKMARK
+              </button>
+            </div>
+            <div class="card-icons">
+              <i class="far fa-heart card-foot-icon fa-lg"></i>
+              <i class="far fa-share-square card-foot-icon fa-lg"></i>
+              <i class="fas fa-ellipsis-v card-foot-icon fa-lg"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card card-shadow">
+          <button class="card-badge">
+            <i class="far fa-bookmark fa-2x"></i>
+          </button>
+          <div class="card-body">
+            <header class="card-header">
+              <h2>Our Changing Planet</h2>
+              <h5>by Khan</h5>
+            </header>
+            <div class="card-info">
+              <p>
+                Visit ten places on our planet that are undergoing the biggest
+                changes today.
+              </p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="card-btn-container">
+              <button class="btn primary-btn-outlined btn-s">READ</button>
+              <button class="btn secondary-btn-outlined btn-s">
+                BOOKMARK
+              </button>
+            </div>
+            <div class="card-icons">
+              <i class="far fa-heart card-foot-icon fa-lg"></i>
+              <i class="far fa-share-square card-foot-icon fa-lg"></i>
+              <i class="fas fa-ellipsis-v card-foot-icon fa-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3>Standard card with image:</h3>
+      <p class="doc-para">For card with image on top.</p>
+      <div class="container-row component-container">
+        <div class="card">
+          <button class="card-badge">
+            <i class="far fa-bookmark fa-2x"></i>
+          </button>
+          <img
+            src="https://m.media-amazon.com/images/M/MV5BZWYxODViMGYtMGE2ZC00ZGQ3LThhMWUtYTVkNGE3OWU4NWRkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjYwNDA2MDE@._V1_.jpg"
+            alt="" class="card-img card-img-bd" />
+          <div class="card-body">
+            <header class="card-header">
+              <h2>Our Changing Planet</h2>
+              <h5>by Khan</h5>
+            </header>
+            <div class="card-info">
+              <p>
+                Visit ten places on our planet that are undergoing the biggest
+                changes today.
+              </p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="card-btn-container">
+              <button class="btn primary-btn-outlined btn-s">READ</button>
+              <button class="btn secondary-btn-outlined btn-s">
+                BOOKMARK
+              </button>
+            </div>
+            <div class="card-icons">
+              <i class="far fa-heart card-foot-icon fa-lg"></i>
+              <i class="far fa-share-square card-foot-icon fa-lg"></i>
+              <i class="fas fa-ellipsis-v card-foot-icon fa-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3>Horizontal Card:</h3>
+      <div class="container-row component-container">
+        <div class="card">
+          <button class="card-badge">
+            <i class="far fa-bookmark fa-2x"></i>
+          </button>
+          <div class="card-img-body">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BZWYxODViMGYtMGE2ZC00ZGQ3LThhMWUtYTVkNGE3OWU4NWRkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjYwNDA2MDE@._V1_.jpg"
+              alt="" class="card-horz-img card-img-bd" />
+            <div class="card-body">
+              <header class="card-header">
+                <h2>Our Changing Planet</h2>
+                <h5>by Khan</h5>
+              </header>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="card-btn-container">
+              <button class="btn primary-btn-outlined btn-s">READ</button>
+              <button class="btn secondary-btn-outlined btn-s">
+                BOOKMARK
+              </button>
+            </div>
+            <div class="card-icons">
+              <i class="far fa-heart card-foot-icon fa-lg"></i>
+              <i class="far fa-share-square card-foot-icon fa-lg"></i>
+              <i class="fas fa-ellipsis-v card-foot-icon fa-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3>Cards with text overlay:</h3>
+      <div class="container-row component-container">
+        <div class="card">
+          <button class="card-badge">
+            <i class="far fa-bookmark fa-2x"></i>
+          </button>
+          <div class="card-txt-ovr">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BZWYxODViMGYtMGE2ZC00ZGQ3LThhMWUtYTVkNGE3OWU4NWRkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjYwNDA2MDE@._V1_.jpg"
+              alt="" class="card-img card-img-bd" />
+            <header class="card-header card-header-absolute">
+              <h2>Our Changing Planet</h2>
+              <h5 class="clr-white">by Khan</h5>
+            </header>
+          </div>
+          <div class="card-body">
+            <div class="card-info">
+              <p>
+                Visit ten places on our planet that are undergoing the biggest
+                changes today.
+              </p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="card-btn-container">
+              <button class="btn primary-btn-outlined btn-s">READ</button>
+              <button class="btn secondary-btn-outlined btn-s">
+                BOOKMARK
+              </button>
+            </div>
+            <div class="card-icons">
+              <i class="far fa-heart card-foot-icon fa-lg"></i>
+              <i class="far fa-share-square card-foot-icon fa-lg"></i>
+              <i class="fas fa-ellipsis-v card-foot-icon fa-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
