@@ -8,6 +8,7 @@
   <script src="https://kit.fontawesome.com/7389171962.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/css/component.css" />
   <script src="/js/badge.js" defer></script>
+  <script src="/js/modal.js" defer></script>
   <title>VITE-UI</title>
 </head>
 
@@ -573,81 +574,26 @@
     </div>
     <div id="modal">
       <h1>Modal</h1>
-      <p class="doc-para"></p>
+      <p class="doc-para">Modal are used to display popup message for the user just like browser alert or prompt.</p>
+      <div class="divider-line"></div>
       <div class="container-row component-container">
-        <div class="modal">
-          <h2 class="modal-header">modal Header</h2>
-          <div class="modal-body">
-              <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="modal-footer footer-row">
-              <button class="btn secondary-btn-outlined btn-s">Action 1</button><button class="btn secondary-btn-outlined btn-s">Action 2</button>
+        <button class="btn primary-btn btn-s modal-btn">Show Modal</button>
+        <div class="modal-block">
+          <div class="modal">
+            <h2 class="modal-header">modal Header</h2>
+            <button class="modal-X-btn">
+              <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="modal-footer footer-row">
+                <button class="btn secondary-btn-outlined btn-s modal-btn">Action 1</button><button class="btn secondary-btn-outlined btn-s modal-btn">Action 2</button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="container-row component-container">
-        <div class="modal">
-          <h2 class="modal-header">modal Header</h2>
-          <div class="modal-body">
-              <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="modal-footer footer-stack">
-              <button class="btn secondary-btn-outlined btn-s">Action 1</button><button class="btn secondary-btn-outlined btn-s">Action 2</button>
-          </div>
-        </div>
-      </div>
-      <div class="container-row component-container">
-        <div class="modal">
-          <h2 class="modal-header">modal Header</h2>
-          <div class="modal-body">
-              <ul class="modal-body-content">
-                  <li class="modal-body-content-item"><i class="far fa-user-circle icon"></i>Item2</li>
-                  <li class="modal-body-content-item"><i class="far fa-user-circle icon"></i>Item3</li>
-                  <li class="modal-body-content-item"><i class="far fa-user-circle icon"></i>Item1</li>
-              </ul>
-          </div>
-        </div>
-      </div>
-      <div class="container-row component-container">
-        <div class="modal">
-          <h2 class="modal-header">modal Header</h2>
-          <hr/>
-          <div class="modal-body body-scroll">
-              <form action="" class="modal-body-content">
-                  <label for="item1" class="modal-body-content-item"><input type="radio" name="inputs" id="item1">item1</label>
-                  <label for="item2" class="modal-body-content-item"><input type="radio" name="inputs" id="item2">item2</label>
-                  <label for="item3" class="modal-body-content-item"><input type="radio" name="inputs" id="item3">item3</label>
-                  <label for="item4" class="modal-body-content-item"><input type="radio" name="inputs" id="item4">item4</label>
-                  <label for="item5" class="modal-body-content-item"><input type="radio" name="inputs" id="item5">item5</label>
-                  <label for="item6" class="modal-body-content-item"><input type="radio" name="inputs" id="item6">item6</label>
-              </form>
-          </div>
-          <hr/>
-          <div class="modal-footer footer-row">
-              <button class="btn secondary-btn-outlined btn-s">Action 1</button><button class="btn secondary-btn-outlined btn-s">Action 2</button>
-          </div>
-       </div>
-      </div>
-      <div class="container-row component-container">
-        <div class="modal">
-          <h2 class="modal-header">modal Header</h2>
-          <hr/>
-          <div class="modal-body body-scroll">
-              <form action="" class="modal-body-content">
-                  <label for="item1" class="modal-body-content-item"><input type="radio" name="inputs" id="item1">item1</label>
-                  <label for="item2" class="modal-body-content-item"><input type="radio" name="inputs" id="item2">item2</label>
-                  <label for="item3" class="modal-body-content-item"><input type="radio" name="inputs" id="item3">item3</label>
-                  <label for="item4" class="modal-body-content-item"><input type="radio" name="inputs" id="item4">item4</label>
-                  <label for="item5" class="modal-body-content-item"><input type="radio" name="inputs" id="item5">item5</label>
-                  <label for="item6" class="modal-body-content-item"><input type="radio" name="inputs" id="item6">item6</label>
-              </form>
-          </div>
-          <hr/>
-          <div class="modal-footer footer-stack">
-            <button class="btn secondary-btn-outlined btn-s">Action 1</button><button class="btn secondary-btn-outlined btn-s">Action 2</button>
-         </div>
-       </div>
-      </div>
+      
     </div>
   </div>
 </body>
