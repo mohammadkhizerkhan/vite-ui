@@ -1,0 +1,28 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    height: auto;
+}
+
+.input-label{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+}
+
+.input{
+    padding: 10px;
+    outline: none;
+}
+
+.error-msg{
+    width: 100%;
+    color: red;
+    display: flex;
+    align-items: center;
+}
