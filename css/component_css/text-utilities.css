@@ -1,0 +1,58 @@
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+
+.text-strike{
+    text-decoration:line-through;
+}
+.text-underline{
+    text-decoration:underline;
+}
+.text-overline{
+    text-decoration:overline;
+}
+.text-none{
+    text-decoration:none;
+}
+
+.text-caps{
+    text-transform: capitalize;
+}
+.text-upper{
+    text-transform: uppercase;
+}
+.text-lower{
+    text-transform: lowercase;
+}
+
+.line-height-s{
+    line-height: 1;
+}
+
+p.line-height-s,p.line-height-m,p.line-height-l{
+    margin-bottom: 1rem;
+}
+.line-height-m{
+    line-height: 1.4;
+}
+
+.line-height-l{
+    line-height: 1.6;
+}
+
+
+.font-bold{
+    font-weight: bold;
+}
+.font-light{
+    font-weight: 100;
+}
+.font-italic{
+    font-style: italic;
+}

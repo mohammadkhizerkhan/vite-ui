@@ -8,6 +8,7 @@
 @import url(/css/component_css/image.css);
 @import url(/css/component_css/input.css);
 @import url(/css/component_css/modal.css);
+@import url(/css/component_css/text-utilities.css);
 
 
 .logo-img-responsive{
@@ -33,6 +34,9 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+.container-column{
+    flex-direction: row;
 }
 
 .img-container{
