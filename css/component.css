@@ -27,6 +27,10 @@
     cursor: pointer;
 }
 
+.doc-para{
+    font-weight: 500;
+}
+
 .svg-logo{
     width: 100%;
     height: 100%;

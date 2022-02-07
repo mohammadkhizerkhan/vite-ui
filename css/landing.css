@@ -13,6 +13,7 @@
     width: 100%;
     height: auto;
 }
+
 .logo{
     width: 18%;
     height: 150px;
@@ -45,6 +46,9 @@
     align-items: flex-start;
     font-size: large;
     margin-right: 25%;
+}
+.doc-para{
+    font-weight: 500;
 }
 
 .btn{
