@@ -20,6 +20,18 @@
     height: 113px;
     cursor: pointer;
 }
+.logo-div{
+    width: 100%;
+    height: 113px;
+    cursor: pointer;
+}
+
+.svg-logo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 
 .component-container{
     border: 2px solid var(--secondary);
