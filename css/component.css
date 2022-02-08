@@ -77,10 +77,10 @@
     font-weight: bold;
 }
 
-.code-wrapper{
+/* .code-wrapper{
     width: 100%;
     word-wrap: break-word;
-}
+} */
 
 .hljs {
     display: block;
