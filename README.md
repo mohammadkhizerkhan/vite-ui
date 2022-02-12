@@ -28,7 +28,7 @@ Vite-UI is a CSS library for developing quick and clean reponsive components jus
 
 <hr>
 
-##Screenshots:
+## Screenshots:
 
 ![image](https://user-images.githubusercontent.com/64767673/153721595-4ffa5a3b-80c1-4674-abf6-1c0893a26143.png)
 ![image](https://user-images.githubusercontent.com/64767673/153721617-e64a5c26-143b-4760-a8f0-432053219ecd.png)
