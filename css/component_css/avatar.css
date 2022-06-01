@@ -1,46 +1,43 @@
-
-
-.avatar{
-    border-radius: 50%;
-    margin: 2px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+.avatar {
+  border-radius: 50%;
+  margin: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
-
-
-.img-avatar{ 
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.img-avatar {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.avatar-square, .img-avatar-square{
-    border-radius: 20%;
+.avatar-square,
+.img-avatar-square {
+  border-radius: 20%;
 }
 
-.avatar-text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--primary);
-    color: var(--secondary);
+.avatar-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 
-.avatar-large{
-    width: 5rem;
-    height: 5rem;
-    font-size: 2rem;
+.avatar-large {
+  width: 5rem;
+  height: 5rem;
+  font-size: 2rem;
 }
-.avatar-medium{
-    width: 4rem;
-    height: 4rem;
-    font-size: 1.5rem;
+.avatar-medium {
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.5rem;
 }
-.avatar-small{
-    width: 3rem;
-    height: 3rem;
-    font-size: 1rem;
+.avatar-small {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1rem;
 }
