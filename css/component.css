@@ -93,3 +93,8 @@
   overflow-x: auto;
   height: auto;
 }
+
+.active{
+    background-color: var(--primary);
+    color: var(--secondary);
+}
